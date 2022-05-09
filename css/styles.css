@@ -1,91 +1,230 @@
-@import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Radio Canada', sans-serif;
-}
-
-body {
-    background: rgb(255, 239, 0);
-    background: linear-gradient(0deg, rgba(255, 239, 0, 1) 0%, rgba(228, 213, 93, 1) 49%, rgba(231, 158, 0, 1) 100%);
-    background-image: url(../images/fondo2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.BlurFondo {
-    position: fixed;
-    z-index: -1;
-    background-color: white;
-    opacity: 0.6;
-    height: 100vh;
-    width: 100vw;
-}
-
-.container {
-    margin: 0 2rem 0 2rem;
-}
-
-h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 5rem;
-    background: #BD611A;
-    background: linear-gradient(to bottom, #BD611A 0%, #1B1B1B 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-}
-
-.imageTortaFrita {
-    width: 25vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.intro {
-    text-align: justify;
-    font-size: 1.5rem;
-    padding: 3%;
-    font-weight: bolder;
-}
-
-h2 {
-    text-decoration: underline;
-    margin-bottom: 0.2rem;
-}
-
-ul,
-ol {
-    margin-bottom: 1rem;
-    padding: 1%;
-}
-
-.video {
-    width: 50%;
-    height: 50vh;
-    border: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.map {
-    /*width: 50%;
+        @import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Radio Canada', sans-serif;
+        }
+        
+        body {
+            background: rgb(255, 239, 0);
+            background: linear-gradient(0deg, rgba(255, 239, 0, 1) 0%, rgba(228, 213, 93, 1) 49%, rgba(231, 158, 0, 1) 100%);
+            background-image: url(../images/fondo2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: 50% 50%;
+        }
+        
+        .BlurFondo {
+            position: fixed;
+            z-index: -1;
+            background-color: #FDFEFE;
+            opacity: 0.75;
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        h1 {
+            /*font-family: 'Pacifico', cursive;*/
+            font-family: 'Bree Serif', serif;
+            font-size: 5rem;
+            text-align: center;
+            color: #0a2b0a;
+            background: rgb(197, 195, 235);
+            background: linear-gradient(90deg, rgba(197, 195, 235, 1) 0%, rgba(193, 239, 159, 1) 49%, rgba(149, 228, 182, 1) 100%);
+        }
+        
+        nav,
+        footer {
+            background-color: #499954;
+            color: antiquewhite;
+        }
+        
+        .enlaces {
+            height: 3rem;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        
+        .enlaces ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+        
+        .enlaces ul li,
+        .enlaces a {
+            transition: 0.8s;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        
+        .enlaces li:hover,
+        .enlaces a:hover {
+            text-decoration: none;
+            color: rgb(23, 52, 23);
+            transform: scale(1.1);
+        }
+        
+        h2,
+        ul,
+        ol,
+        .TextAudio,
+        audio {
+            margin: 0 2rem 0 2rem;
+        }
+        
+        .imageTortaFrita {
+            width: 25vw;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .intro {
+            text-align: justify;
+            font-size: 1.5rem;
+            padding: 3%;
+            font-weight: bolder;
+        }
+        
+        h2 {
+            text-decoration: underline;
+            margin-bottom: 0.2rem;
+        }
+        
+        main ul,
+        ol {
+            margin-bottom: 1rem;
+            padding: 1%;
+        }
+        
+        .video {
+            width: 50%;
+            height: 50vh;
+            border: 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .map {
+            /*width: 50%;
     height: 30vh;*/
-    border: none;
-    width: 300px;
-    height: 500px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
-}
-
-.TextAudio {
-    font-style: italic;
-    font-weight: bolder;
-}
+            border: none;
+            width: 300px;
+            height: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1rem;
+        }
+        
+        .TextAudio {
+            font-style: italic;
+            font-weight: bolder;
+        }
+        
+        .fa-whatsapp {
+            color: green;
+            font-size: 4rem;
+            position: fixed;
+            bottom: 3%;
+            right: 3%;
+            transition: all 0.8s;
+        }
+        
+        .fa-whatsapp:hover {
+            background-color: green;
+            color: #FFFFFF;
+            border-radius: 55%;
+            transform: scale(1.2);
+        }
+        
+        footer {
+            padding: 1rem 0 1.5rem 0;
+        }
+        
+        .svg-inline--fa {
+            vertical-align: -0.200em;
+        }
+        
+        .SocialMediaButtons {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .SocialMediaButtons .social-button {
+            display: inline-block;
+            position: relative;
+            cursor: pointer;
+            width: 3.125rem;
+            height: 3.125rem;
+            border: 0.125rem solid transparent;
+            padding: 0;
+            text-decoration: none;
+            text-align: center;
+            color: #fefefe;
+            font-size: 1.5625rem;
+            font-weight: normal;
+            line-height: 2em;
+            border-radius: 1.6875rem;
+            transition: all 0.5s ease;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .SocialMediaButtons .fa-twitter,
+        .fa-facebook-f,
+        .fa-youtube,
+        .fa-instagram {
+            font-size: 25px;
+        }
+        
+        .SocialMediaButtons .social-button.facebook {
+            background: #3b5998;
+        }
+        
+        .SocialMediaButtons .social-button.facebook:hover {
+            color: #3b5998;
+            background: #fefefe;
+            border-color: #3b5998;
+        }
+        
+        .SocialMediaButtons .social-button.twitter {
+            background: #55acee;
+        }
+        
+        .SocialMediaButtons .social-button.twitter:hover {
+            color: #55acee;
+            background: #fefefe;
+            border-color: #55acee;
+        }
+        
+        .SocialMediaButtons .social-button.youtube {
+            background: #bb0000;
+        }
+        
+        .SocialMediaButtons .social-button.youtube:hover {
+            color: #bb0000;
+            background: #fefefe;
+            border-color: #bb0000;
+        }
+        
+        .SocialMediaButtons .social-button.instagram {
+            background: #ED4956;
+        }
+        
+        .SocialMediaButtons .social-button.instagram:hover,
+        .SocialMediaButtons .social-button.instagram:focus {
+            color: #ED4956;
+            background: #fefefe;
+            border-color: #ED4956;
+        }

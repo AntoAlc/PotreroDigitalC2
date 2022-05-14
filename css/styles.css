@@ -186,7 +186,9 @@ main ol {
   display: flex;
   justify-content: space-evenly;
 }
-
+audio::-webkit-media-controls-panel {
+  background-color: #499954;
+}
 .spotifyFrame {
   border-radius: 12px;
   width: 80%;

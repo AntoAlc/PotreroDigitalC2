@@ -1,230 +1,369 @@
-        @import url('https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Radio Canada', sans-serif;
-        }
-        
-        body {
-            background: rgb(255, 239, 0);
-            background: linear-gradient(0deg, rgba(255, 239, 0, 1) 0%, rgba(228, 213, 93, 1) 49%, rgba(231, 158, 0, 1) 100%);
-            background-image: url(../images/fondo2.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            background-position: 50% 50%;
-        }
-        
-        .BlurFondo {
-            position: fixed;
-            z-index: -1;
-            background-color: #FDFEFE;
-            opacity: 0.75;
-            height: 100vh;
-            width: 100vw;
-        }
-        
-        h1 {
-            /*font-family: 'Pacifico', cursive;*/
-            font-family: 'Bree Serif', serif;
-            font-size: 5rem;
-            text-align: center;
-            color: #0a2b0a;
-            background: rgb(197, 195, 235);
-            background: linear-gradient(90deg, rgba(197, 195, 235, 1) 0%, rgba(193, 239, 159, 1) 49%, rgba(149, 228, 182, 1) 100%);
-        }
-        
-        nav,
-        footer {
-            background-color: #499954;
-            color: antiquewhite;
-        }
-        
-        .enlaces {
-            height: 3rem;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        }
-        
-        .enlaces ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            list-style-type: none;
-        }
-        
-        .enlaces ul li,
-        .enlaces a {
-            transition: 0.8s;
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 1rem;
-            font-weight: bold;
-        }
-        
-        .enlaces li:hover,
-        .enlaces a:hover {
-            text-decoration: none;
-            color: rgb(23, 52, 23);
-            transform: scale(1.1);
-        }
-        
-        h2,
-        ul,
-        ol,
-        .TextAudio,
-        audio {
-            margin: 0 2rem 0 2rem;
-        }
-        
-        .imageTortaFrita {
-            width: 25vw;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .intro {
-            text-align: justify;
-            font-size: 1.5rem;
-            padding: 3%;
-            font-weight: bolder;
-        }
-        
-        h2 {
-            text-decoration: underline;
-            margin-bottom: 0.2rem;
-        }
-        
-        main ul,
-        ol {
-            margin-bottom: 1rem;
-            padding: 1%;
-        }
-        
-        .video {
-            width: 50%;
-            height: 50vh;
-            border: 0;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .map {
-            /*width: 50%;
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Radio Canada", sans-serif;
+}
+
+body {
+  background: rgb(255, 239, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 239, 0, 1) 0%,
+    rgba(228, 213, 93, 1) 49%,
+    rgba(231, 158, 0, 1) 100%
+  );
+  background-image: url(../images/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+.BlurFondo {
+  position: fixed;
+  z-index: -1;
+  background-color: #fdfefe;
+  opacity: 0.75;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  background: rgb(197, 195, 235);
+  background: linear-gradient(
+    90deg,
+    rgba(197, 195, 235, 1) 0%,
+    rgba(193, 239, 159, 1) 49%,
+    rgba(149, 228, 182, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  /*font-family: 'Pacifico', cursive;*/
+  font-family: "Bree Serif", serif;
+  font-size: 5rem;
+  text-align: center;
+  color: #0a2b0a;
+  flex-grow: 25;
+}
+
+.GoTo {
+  gap: 1rem;
+  text-decoration: none;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(23, 52, 23);
+}
+
+.iconGoTo {
+  font-size: 2rem;
+}
+
+nav,
+footer {
+  background-color: #499954;
+  color: antiquewhite;
+}
+
+.enlaces {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.enlaces ul {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+}
+
+.enlaces ul li,
+.enlaces a {
+  transition: 0.8s;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.enlaces li:hover,
+.enlaces a:hover {
+  text-decoration: none;
+  color: rgb(23, 52, 23);
+  transform: scale(1.1);
+}
+
+h2,
+ul,
+ol,
+.TextAudio,
+audio {
+  margin: 0 2rem 0 2rem;
+}
+
+.contentImagesTortaFritas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.imageTortaFrita {
+  width: 15vw;
+  height: auto;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
+
+.imageTortaFrita:hover {
+  transform: scale(1.2);
+}
+
+.intro {
+  text-align: justify;
+  font-size: 1.5rem;
+  padding: 3%;
+  font-weight: bolder;
+}
+
+h2 {
+  text-decoration: underline;
+  margin-bottom: 0.2rem;
+}
+
+main {
+  min-height: 68.9vh;
+}
+
+main ul,
+main ol {
+  margin-bottom: 1rem;
+  padding: 0 4% 0 1%;
+}
+
+.video {
+  width: 40vw;
+  height: 35vh;
+  border: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+.titleMap {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.map {
+  /*width: 50%;
     height: 30vh;*/
-            border: none;
-            width: 300px;
-            height: 500px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 1rem;
-        }
-        
-        .TextAudio {
-            font-style: italic;
-            font-weight: bolder;
-        }
-        
-        .fa-whatsapp {
-            color: green;
-            font-size: 4rem;
-            position: fixed;
-            bottom: 3%;
-            right: 3%;
-            transition: all 0.8s;
-        }
-        
-        .fa-whatsapp:hover {
-            background-color: green;
-            color: #FFFFFF;
-            border-radius: 55%;
-            transform: scale(1.2);
-        }
-        
-        footer {
-            padding: 1rem 0 1.5rem 0;
-        }
-        
-        .svg-inline--fa {
-            vertical-align: -0.200em;
-        }
-        
-        .SocialMediaButtons {
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-        
-        .SocialMediaButtons .social-button {
-            display: inline-block;
-            position: relative;
-            cursor: pointer;
-            width: 3.125rem;
-            height: 3.125rem;
-            border: 0.125rem solid transparent;
-            padding: 0;
-            text-decoration: none;
-            text-align: center;
-            color: #fefefe;
-            font-size: 1.5625rem;
-            font-weight: normal;
-            line-height: 2em;
-            border-radius: 1.6875rem;
-            transition: all 0.5s ease;
-            margin-right: 0.25rem;
-            margin-bottom: 0.25rem;
-        }
-        
+  border: none;
+  width: 250px;
+  height: 300px;
+  display: block;
+  margin: 1rem auto 1rem auto;
+}
+
+.TextAudio {
+  font-style: italic;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+
+.PlayAudio {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.spotifyFrame {
+  border-radius: 12px;
+  width: 80%;
+  min-height: 30vh;
+  display: block;
+  margin: 0.5rem auto 1.5rem auto;
+}
+
+.fa-whatsapp {
+  color: green;
+  font-size: 3rem;
+  position: fixed;
+  bottom: 1vh;
+  right: 3%;
+  transition: all 0.8s;
+}
+
+.fa-whatsapp:hover {
+  background-color: green;
+  color: #ffffff;
+  border-radius: 50%;
+  transform: scale(1.2);
+}
+
+footer {
+  padding: 1rem 0 1rem 0;
+}
+
+.svg-inline--fa {
+  vertical-align: -0.2em;
+}
+
+.SocialMediaButtons {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.SocialMediaButtons .social-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  border: 0.125rem solid transparent;
+  text-decoration: none;
+  text-align: center;
+  color: #fefefe;
+  font-size: 1rem;
+  line-height: 1.75em;
+  border-radius: 1.6875rem;
+  transition: all 0.5s ease;
+}
+/*
         .SocialMediaButtons .fa-twitter,
         .fa-facebook-f,
         .fa-youtube,
         .fa-instagram {
-            font-size: 25px;
-        }
-        
-        .SocialMediaButtons .social-button.facebook {
-            background: #3b5998;
-        }
-        
-        .SocialMediaButtons .social-button.facebook:hover {
-            color: #3b5998;
-            background: #fefefe;
-            border-color: #3b5998;
-        }
-        
-        .SocialMediaButtons .social-button.twitter {
-            background: #55acee;
-        }
-        
-        .SocialMediaButtons .social-button.twitter:hover {
-            color: #55acee;
-            background: #fefefe;
-            border-color: #55acee;
-        }
-        
-        .SocialMediaButtons .social-button.youtube {
-            background: #bb0000;
-        }
-        
-        .SocialMediaButtons .social-button.youtube:hover {
-            color: #bb0000;
-            background: #fefefe;
-            border-color: #bb0000;
-        }
-        
-        .SocialMediaButtons .social-button.instagram {
-            background: #ED4956;
-        }
-        
-        .SocialMediaButtons .social-button.instagram:hover,
-        .SocialMediaButtons .social-button.instagram:focus {
-            color: #ED4956;
-            background: #fefefe;
-            border-color: #ED4956;
-        }
+            font-size: 1rem;
+        }*/
+
+.SocialMediaButtons .social-button.facebook {
+  background: #3b5998;
+}
+
+.SocialMediaButtons .social-button.facebook:hover {
+  color: #3b5998;
+  background: #fefefe;
+  border-color: #3b5998;
+}
+
+.SocialMediaButtons .social-button.twitter {
+  background: #55acee;
+}
+
+.SocialMediaButtons .social-button.twitter:hover {
+  color: #55acee;
+  background: #fefefe;
+  border-color: #55acee;
+}
+
+.SocialMediaButtons .social-button.youtube {
+  background: #bb0000;
+}
+
+.SocialMediaButtons .social-button.youtube:hover {
+  color: #bb0000;
+  background: #fefefe;
+  border-color: #bb0000;
+}
+
+.SocialMediaButtons .social-button.instagram {
+  background: #ed4956;
+}
+
+.SocialMediaButtons .social-button.instagram:hover {
+  color: #ed4956;
+  background: #fefefe;
+  border-color: #ed4956;
+}
+
+/*-------------------------------*/
+/*        Estilos Form           */
+/*-------------------------------*/
+
+
+
+.FormContacto {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 3rem 33vw;
+  max-width: 33vw;
+  background-color: #fefefe;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 5%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+}
+.FormContacto p{
+    text-align: center;
+    align-self: center;
+    color: #0a2b0a;
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+
+}
+.FormContacto .inputForm,
+.FormContacto textarea {
+  min-width: 100%;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem;
+  background: #ededed;
+  border-radius: 0.25rem;
+  border: none;
+  
+}
+
+.FormContacto .inputForm:focus,
+.FormContacto textarea:focus{
+background-color:rgba(165, 227, 143, 0.365) ;
+outline: none !important;
+}
+
+
+.container-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  justify-self: auto;
+  width: 100%;
+  gap: 2%;
+  
+}
+
+.buttonForm {
+  width: 48%;
+  justify-self: auto;
+  background-color: #499954 ;
+  padding: 0.25rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  color: #fefefe;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  transition: all 0.5s ease;
+  margin-top: 0.5rem;
+
+}
+
+
+.buttonForm:hover, .buttonForm:active {
+    background-color: #fefefe ;
+    color: #499954;
+  
+  }

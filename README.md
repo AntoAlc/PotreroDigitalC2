@@ -51,3 +51,21 @@ Realizar un maquetado de la página*
 <li> Deben colocar un elemento flotante en la página con el icono de whatsapp. (pueden colocarle un enlace a un número de teléfono para enviar un whatsapp)</li>
 <li> Actualizar el repositorio de Github y entregar el link de la githubpage en la plataforma.</li>
  </ul> 
+
+
+## CLASE 5 -TRABAJO PRÁCTICO 4
+*A la receta del Practico 3 agregarle los siguientes ítems.*
+<ol> 
+ <li> Crear un archivo con el nombre contactos.html dentro de la carpeta del proyecto
+ <li> Utilizar en contacto.html, el mismo header y footer de index.html
+ <li> Utilizar la misma hoja de estilos de index.html
+ <li> Insertar un formulario de contacto y un botón ( ejemplo en el pdf de la clase)
+ <li> Agregar al navegador del index.html un enlace a contacto.html
+ <li> Agregar a contacto.html un enlace para volver a index.html
+ <li> Todo enlace debe tener un efecto al pasar el mouse (:hover)
+ <li> Utilizar por lo menos 4 veces la Pseudo-clase :hover en elementos que no sean enlaces
+ <li> Investigar que son las transiciones y animaciones de CSS (lo veremos la próxima clase)
+ <li> Quien se anime puede utilizarlas dentro de la Pseudoclase :hover (no es obligatorio)
+</ol> 
+
+*Actualizar el repositorio de Github, chequear que se visualice en la Github page y entregar el link en la plataforma de Potrero Digital.*

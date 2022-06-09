@@ -3,13 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
 
 @font-face {
-  font-family: 'Satisfy';
+  font-family: "Satisfy";
   src: url(/fonts/Satisfy-Regular.ttf);
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
-  font-family: 'Courgette';
+  font-family: "Courgette";
   src: url(/fonts/Courgette-Regular.ttf);
   font-style: normal;
   font-weight: normal;
@@ -150,7 +150,6 @@ audio {
   font-weight: bolder;
   /*font-family: "Satisfy", sans-serif;*/
   font-family: "Courgette", "Satisfy", sans-serif;
-
 }
 
 h2 {
@@ -308,11 +307,64 @@ footer {
   border-color: #ed4956;
 }
 
+.kangrebur {
+  display: none;
+}
+
+/*-------------------------------*/
+/*        Medias Queries         */
+/*-------------------------------*/
+@media (max-width: 768px) {
+  /* - Ocultar los botones de nav
+      - Añadir el ícono hamburguesa */
+  .kangrebur {
+    font-size: 40px;
+    display: flex;
+  }
+
+  .enlaces {
+    display: none;
+  }
+  header {
+    padding: 1rem;
+  }
+  .video {
+    width: 90vw;
+    height: 45vh;
+  }
+  .map {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .intro{
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .contentImagesTortaFritas {
+    flex-wrap: wrap;
+  }
+  .imageTortaFrita {
+    width: 37vw;
+  }
+
+  .map {
+    width: 100vw;
+  }
+  .PlayAudio {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .spotifyFrame{
+    width: 90%;
+  }
+}
+
 /*-------------------------------*/
 /*        Estilos Form           */
 /*-------------------------------*/
-
-
 
 .FormContacto {
   display: flex;
@@ -325,16 +377,14 @@ footer {
   box-sizing: border-box;
   border-radius: 5%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-
 }
-.FormContacto p{
-    text-align: center;
-    align-self: center;
-    color: #0a2b0a;
-    font-weight: 700;
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-
+.FormContacto p {
+  text-align: center;
+  align-self: center;
+  color: #0a2b0a;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 .FormContacto .inputForm,
 .FormContacto textarea {
@@ -344,15 +394,13 @@ footer {
   background: #ededed;
   border-radius: 0.25rem;
   border: none;
-  
 }
 
 .FormContacto .inputForm:focus,
-.FormContacto textarea:focus{
-background-color:rgba(165, 227, 143, 0.365) ;
-outline: none !important;
+.FormContacto textarea:focus {
+  background-color: rgba(165, 227, 143, 0.365);
+  outline: none !important;
 }
-
 
 .container-buttons {
   display: flex;
@@ -361,13 +409,12 @@ outline: none !important;
   justify-self: auto;
   width: 100%;
   gap: 2%;
-  
 }
 
 .buttonForm {
   width: 48%;
   justify-self: auto;
-  background-color: #499954 ;
+  background-color: #499954;
   padding: 0.25rem;
   cursor: pointer;
   border: none;
@@ -377,12 +424,10 @@ outline: none !important;
   border-radius: 0.25rem;
   transition: all 0.5s ease;
   margin-top: 0.5rem;
-
 }
 
-
-.buttonForm:hover, .buttonForm:active {
-    background-color: #fefefe ;
-    color: #499954;
-  
-  }
+.buttonForm:hover,
+.buttonForm:active {
+  background-color: #fefefe;
+  color: #499954;
+}

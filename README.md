@@ -52,7 +52,6 @@ Realizar un maquetado de la página*
 <li> Actualizar el repositorio de Github y entregar el link de la githubpage en la plataforma.</li>
  </ul> 
 
-
 ## CLASE 5 -TRABAJO PRÁCTICO 4
 *A la receta del Practico 3 agregarle los siguientes ítems.*
 <ol> 
@@ -69,3 +68,34 @@ Realizar un maquetado de la página*
 </ol> 
 
 *Actualizar el repositorio de Github, chequear que se visualice en la Github page y entregar el link en la plataforma de Potrero Digital.*
+
+
+## CLASE 6 -TRABAJO PRÁCTICO 5
+*A la receta del trabajo práctico 4 aplicarle un “Diseño responsivo” para su correcta visualización en los distintos dispositivos (computadora, celular, tablet, etc.).* 
+*No pueden faltar los siguientes items:*
+<ol> 
+ <li> Utilizar medidas relativas vh, vw , % para imágenes y contenedores.
+ <li> Utilizar medidas relativas em y rem para el texto.
+ <li> Utilizar diferente tipo de tipografías (fuentes)
+ <li> Por lo menos un tipo de fuente debe estar en la carpeta del proyecto (@font-face)
+ <li> Por lo menos un tipo de fuente debe linkearse con la galería de Google Fonts
+ <li> Actualizar el repositorio de Github con los cambios realizados
+ <li> Entregar el link de la github page en la Plataforma Potrero Digital.
+</ol> 
+
+
+## CLASE 7 - TRABAJO PRÁCTICO 6
+*A la receta del trabajo práctico 5 aplicarle un “Diseño responsivo” utilizando FLEXBOX para el posicionamiento de los elementos y MEDIA QUERIES para su correcta visualización en los distintos dispositivos (computadora, celular, tablet, etc.).*
+*No pueden faltar los siguientes items:*
+<ol> 
+<li> Utilizar FLEXBOX para el posicionamiento de cajas y elementos.
+<li> Con MEDIA QUERIES Implementar 3 puntos de quiebre (breakpoints) donde el diseño se
+modifique al cambiar de dispositivo (fondo, tamaño, etc).
+<li> Insertar un elemento que aparezca cuando se visualice en un Celular.
+<li> Insertar un elemento que desaparezca cuando se visualice en la Computadora.
+<li>Agregar las etiquetas META con toda la información necesaria para un buen
+posicionamiento en los buscadores (SEO).
+<li>Asegurarse que el proyecto cumpla con todas las buenas prácticas.
+<li> Actualizar el repositorio de Github con los cambios realizados.
+<li> Entregar el link de la Github page en la Plataforma de Potrero Digital.
+</ol> 

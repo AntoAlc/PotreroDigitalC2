@@ -4,13 +4,13 @@
 
 @font-face {
   font-family: "Satisfy";
-  src: url(/fonts/Satisfy-Regular.ttf);
+  src: url(../fonts/Satisfy-Regular.ttf) format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "Courgette";
-  src: url(/fonts/Courgette-Regular.ttf);
+  src: url(../fonts/Courgette-Regular.ttf) format('truetype');
   font-style: normal;
   font-weight: normal;
 }
@@ -20,6 +20,11 @@
   margin: 0;
   padding: 0;
   font-family: "Radio Canada", sans-serif;
+}
+
+.container {
+  min-width: 100%;
+  padding: 0;
 }
 
 body {
@@ -82,7 +87,7 @@ h1 {
 }
 
 nav,
-footer {
+.footerPage {
   background-color: #499954;
   color: antiquewhite;
 }
@@ -107,6 +112,7 @@ footer {
   color: #ffffff;
   font-size: 1rem;
   font-weight: bold;
+  text-align: -webkit-center;
 }
 
 .enlaces li:hover,
@@ -192,15 +198,20 @@ main ol {
   margin: 1rem auto 1rem auto;
 }
 
-.TextAudio {
+.TextAudio, 
+.TitleCards{
   font-style: italic;
   font-weight: bolder;
   margin-bottom: 1rem;
+  font-size: 1.4em;
+  margin: 0 2rem 0 2rem;
+  color: #576057;
 }
 
 .PlayAudio {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 1rem;
 }
 audio::-webkit-media-controls-panel {
   background-color: #499954;
@@ -212,6 +223,60 @@ audio::-webkit-media-controls-panel {
   display: block;
   margin: 0.5rem auto 1.5rem auto;
 }
+
+.cardQuote {
+  max-width: 50vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(8, 124, 53, 0.233);
+}
+
+.cardQuote p{
+  font-family: "Satisfy", sans-serif;
+  
+}
+
+
+.CardsBootstrap {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 1rem;
+}
+
+.cardb {
+  width: 20%;
+  font-size: 0.7rem;
+}
+
+.cardb img {
+  height: 10rem;
+  object-fit: cover ;
+  object-position: 20% 10%;
+
+}
+
+.cardb .card-title{
+  font-weight: bold;
+}
+
+.cardb .card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+
+.cardb a{
+  font-size: 0.85rem;
+}
+
 
 .fa-whatsapp {
   color: green;
@@ -229,7 +294,7 @@ audio::-webkit-media-controls-panel {
   transform: scale(1.2);
 }
 
-footer {
+.footerPage {
   padding: 1rem 0 1rem 0;
 }
 
@@ -335,10 +400,15 @@ footer {
   .map {
     width: 90vw;
   }
+  .cardb {
+    width: 40%;
+  }
+  .cardQuote {
+    max-width: 90vw;}
 }
 
 @media (max-width: 575px) {
-  .intro{
+  .intro {
     font-size: 1rem;
     font-weight: normal;
   }
@@ -357,9 +427,14 @@ footer {
     align-items: center;
     gap: 1rem;
   }
-  .spotifyFrame{
+  .spotifyFrame {
     width: 90%;
   }
+  .cardb {
+    width: 80%;
+  }
+  .cardQuote {
+    max-width: 80vw;}
 }
 
 /*-------------------------------*/

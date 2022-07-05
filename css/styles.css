@@ -4,13 +4,13 @@
 
 @font-face {
   font-family: "Satisfy";
-  src: url(../fonts/Satisfy-Regular.ttf) format('truetype');
+  src: url(../fonts/Satisfy-Regular.ttf) format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "Courgette";
-  src: url(../fonts/Courgette-Regular.ttf) format('truetype');
+  src: url(../fonts/Courgette-Regular.ttf) format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -84,6 +84,21 @@ h1 {
 
 .iconGoTo {
   font-size: 2rem;
+}
+
+.cambiarModo {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  flex-grow: 1;
+  color: rgb(23, 52, 23);
+}
+
+.fa-moon {
+  font-size: 2.2rem;
 }
 
 nav,
@@ -198,8 +213,8 @@ main ol {
   margin: 1rem auto 1rem auto;
 }
 
-.TextAudio, 
-.TitleCards{
+.TextAudio,
+.TitleCards {
   font-style: italic;
   font-weight: bolder;
   margin-bottom: 1rem;
@@ -235,11 +250,9 @@ audio::-webkit-media-controls-panel {
   box-shadow: 0px 4px 4px rgba(8, 124, 53, 0.233);
 }
 
-.cardQuote p{
+.cardQuote p {
   font-family: "Satisfy", sans-serif;
-  
 }
-
 
 .CardsBootstrap {
   margin-bottom: 1.5rem;
@@ -257,26 +270,23 @@ audio::-webkit-media-controls-panel {
 
 .cardb img {
   height: 10rem;
-  object-fit: cover ;
+  object-fit: cover;
   object-position: 20% 10%;
-
 }
 
-.cardb .card-title{
+.cardb .card-title {
   font-weight: bold;
 }
 
-.cardb .card-body{
+.cardb .card-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
-
-.cardb a{
+.cardb a {
   font-size: 0.85rem;
 }
-
 
 .fa-whatsapp {
   color: green;
@@ -296,6 +306,9 @@ audio::-webkit-media-controls-panel {
 
 .footerPage {
   padding: 1rem 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .svg-inline--fa {
@@ -372,6 +385,18 @@ audio::-webkit-media-controls-panel {
   border-color: #ed4956;
 }
 
+.info {
+  display: flex;
+  margin-top: 1rem;
+  border: none;
+  color: whitesmoke;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #0000009c;
+  padding: 0.1rem;
+}
+
 .kangrebur {
   display: none;
 }
@@ -404,7 +429,8 @@ audio::-webkit-media-controls-panel {
     width: 40%;
   }
   .cardQuote {
-    max-width: 90vw;}
+    max-width: 90vw;
+  }
 }
 
 @media (max-width: 575px) {
@@ -434,7 +460,8 @@ audio::-webkit-media-controls-panel {
     width: 80%;
   }
   .cardQuote {
-    max-width: 80vw;}
+    max-width: 80vw;
+  }
 }
 
 /*-------------------------------*/
@@ -505,4 +532,14 @@ audio::-webkit-media-controls-panel {
 .buttonForm:active {
   background-color: #fefefe;
   color: #499954;
+}
+
+/* alertas */
+
+.swal2-styled.swal2-confirm {
+  background-color: #499954 !important;
+}
+
+.swal2-styled.swal2-confirm:focus {
+  box-shadow: 0 0 0 3px #7ec888 !important;
 }

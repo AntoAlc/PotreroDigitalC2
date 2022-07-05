@@ -15,288 +15,298 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+
 </head>
 
 <body>
+   <script src="js/welcome.js"></script> 
 
-    <div class="BlurFondo"></div>
-    <div class="container">
-
-
-        <body>
-            <header>
-                <i class="fas fa-bars kangrebur"></i>
-
-                <h1>Tortas Fritas</h1>
-                <!-- <a href="./contacto.html" class="GoTo"> <i class="fas fa-file-signature iconGoTo"></i> Contacto</a> -->
-                <a href="./contacto.html" class="GoTo"> <i class="fas fa-address-card iconGoTo"></i> Contacto</a>
-                <!-- <a href="./contacto.html" class="GoTo"> <i class="fas fa-file-contract iconGoTo"></i> Contacto</a> -->
-            </header>
-            <main>
+    <div class="BlurFondo" id="BlurFondo"></div>
+    <div class="container" id="container">
 
 
 
-                <nav class="enlaces ">
-                    <ul class="navUl ">
+        <header id="header" >
+            <i class="fas fa-bars kangrebur" id="kangrebur"></i>
 
-                        <li> <a href="https://cocinerosargentinos.com/economicas/tortas-fritas-con-sabor-a-limon "
-                                target="_blank " rel="noopener noreferrer "><i class="fas fa-cookie "></i> Tortas Fritas
-                                de limón</a> </li>
+            <button id="cambiarModo" class="cambiarModo" onclick="modoOscuro()"><i class="fas fa-moon"> </i>Modo Oscuro</button>
+            <h1 id="h1">Tortas Fritas</h1>
+            <!-- <a href="./contacto.html" class="GoTo"> <i class="fas fa-file-signature iconGoTo"></i> Contacto</a> -->
+            <a href="./contacto.html" class="GoTo" id="GoTo"> <i class="fas fa-address-card iconGoTo"></i> Contacto</a>
+            <!-- <a href="./contacto.html" class="GoTo"> <i class="fas fa-file-contract iconGoTo"></i> Contacto</a> -->
 
-                        <li> <a href="https://cocinerosargentinos.com/frituras/tortas-fritas-alemanas-2 "
-                                target="_blank " rel="noopener noreferrer "><i class="fas fa-cookie "></i> Tortas Fritas
-                                Alemanas</a> </li>
-
-                        <li> <a href="https://cocinerosargentinos.com/pasteleria/tortas-fritas-italianas "
-                                target="_blank " rel="noopener noreferrer "> <i class="fas fa-cookie "></i> Tortas
-                                Fritas Italianas</a> </li>
-
-                        <li> <a href="https://cocinerosargentinos.com/frituras/tortas-fritas-nortenas-rellenas-con-dulce-de-leche "
-                                target="_blank " rel="noopener noreferrer "> <i class="fas fa-cookie "></i> Tortas
-                                Fritas norteñas rellenas</a> </li>
+        </header>
+        <main id="main">
 
 
-                    </ul>
-                </nav>
 
+            <nav class="enlaces " id="nav">
+                <ul class="navUl ">
 
-                <p class="intro ">
+                    <li> <a href="https://cocinerosargentinos.com/economicas/tortas-fritas-con-sabor-a-limon "
+                            target="_blank " rel="noopener noreferrer "><i class="fas fa-cookie "></i> Tortas Fritas
+                            de limón</a> </li>
 
-                    La torta frita (en gran parte de Argentina y todo Uruguay), cachanga (en el Perú), hojaldra (en
-                    Panamá y Colombia), sopaipilla (en Chile y la región argentina de Cuyo),chipá cuerito, chipá chiryrý
-                    y chipa amasada (en el Noreste argentino y Paraguay) y
-                    frito (en el noroeste argentino y Bolivia) es un bocado típico de la gastronomía de América Latina.
-                    Las tortas fritas usualmente se preparan de forma redondeada y achatada. También existen variantes
-                    que recuerdan por su masa y gusto
-                    a los buñuelos.
+                    <li> <a href="https://cocinerosargentinos.com/frituras/tortas-fritas-alemanas-2 " target="_blank "
+                            rel="noopener noreferrer "><i class="fas fa-cookie "></i> Tortas Fritas
+                            Alemanas</a> </li>
 
-                </p>
-                <div class="contentImagesTortaFritas ">
-                    <img src="./images/tortaFrita.jpg " alt="Torta Frita " class="imageTortaFrita ">
-                    <img src="./images/TortasFritasLimon.jpg " alt="Tortas Fritas de Limon " class="imageTortaFrita ">
-                    <img src="./images/TortasFritasRellenasNortenas.jpg " alt="TortasFritasRellenasNorteñas "
-                        class="imageTortaFrita ">
-                    <img src="./images/TortasFritasMate.jpg " alt="TortasFritasMate " class="imageTortaFrita ">
-                </div>
+                    <li> <a href="https://cocinerosargentinos.com/pasteleria/tortas-fritas-italianas " target="_blank "
+                            rel="noopener noreferrer "> <i class="fas fa-cookie "></i> Tortas
+                            Fritas Italianas</a> </li>
 
+                    <li> <a href="https://cocinerosargentinos.com/frituras/tortas-fritas-nortenas-rellenas-con-dulce-de-leche "
+                            target="_blank " rel="noopener noreferrer "> <i class="fas fa-cookie "></i> Tortas
+                            Fritas norteñas rellenas</a> </li>
 
-                <h2>Ingredientes</h2>
-                <ul>
-                    <li>1/2 kg de harina</li>
-                    <li>4 cdas de grasa o manteca</li>
-                    <li>1/2 taza de agua</li>
-                    <li>2 cditas de sal</li>
-                    <li>Aceite o grasa de vaca para freír, c/n</li>
 
                 </ul>
+            </nav>
 
-                <h2>Preparación:</h2>
 
-                <ol>
-                    <li>Colocar en un bol o recipiente los 250 g. de harina 0000 junto con los 250 g. de harina
-                        leudante. Si no tienen harina leudante no pasa nada, pueden utilizar directamente 500 g. de
-                        harina 0000. La función de la harina leudante es que
-                        las tortas fritas queden un poco más infladas, pero si solo utilizan harina común también van a
-                        quedar buenísimas.
-                    </li>
-                    <li>Mezcar bien las harinas, hacer un hueco en el medio y agregar una cucharadita de sal.</li>
-                    <li>En el mismo hueco en el que agregamos la sal ahora vamos a incorporar 300 cm3 de agua caliente y
-                        luego la grasa de cerdo o vacuna. Es importante que el agua esté caliente ya que de otra forma
-                        deberíamos derretir la grasa antes de incorporarla,
-                        por lo tanto haciéndolo así nos ahorramos un paso.</li>
-                    <li>Una vez que agregamos la grasa vamos a mezclar con los manos. Si utilizan anillos como yo
-                        recuerden quitarselos antes de empezar! Hay que pasar la masa a una mesada y amasar durante
-                        varios minutos. Si van a hacer tortas fritas dulces
-                        éste es el momento para agregar algún detalle que les guste, por ejemplo hay gente que utiliza
-                        ralladura de limón o también esencia de vainilla para darle otro toque de sabor. No hace falta
-                        amasar un montón, pero si asegurarnos
-                        de que esté bien unida.</li>
-                    <li>Ahora vamos a envolver el bollo de masa en papel film y dejarlo reposar. Les recomiendo que como
-                        mínimo lo dejen reposar 15 minutos, aunque puede ser más. Se dice que lo ideal es preparar la
-                        masa y dejarla reposar toda la noche para
-                        cocinar las tortas fritas al día siguiente. En mi caso la dejé reposar media hora y cambia
-                        absolutamente su consistencia.
-                    </li>
-                    <li>Una vez que tenemos la masa lista vamos a formar una especie de cilindro y cortarlo en trozos
-                        pequeños para dividir la masa para cada torta frita. Les recomiendo que vean el video para que
-                        entiendan mejor a lo que me refiero, ya que
-                        explicarlo por escrito es un poco difícil.</li>
-                    <li>Con cada trozo de masa vamos a hacer una bolita. Luego con el palo de amasar vamos a aplastarla
-                        hasta obtener un círculo de masa parecido al de una tapa de empanada pero más grueso, y por
-                        último a cada uno de éstos círculos de masa
-                        le haremos un agujero en el medio con un dedo. La función de éste hueco en la torta frita no es
-                        estético, sino para que el aceite pueda pasar por ahí mientras se cocinan.</li>
-                    <li>Llegó la hora de cocinarlas. Pueden utilizar aceite común o hacerlas en grasa como hice yo. La
-                        verdad es que en mi opinión, al igual que las empanadas, las tortas fritas quedan mucho mejor si
-                        las freímos en grasa. El secreto aquí es
-                        que las tortas fritas no se cocinan a máxima temperatura, sino que la grasa o aceite debe estar
-                        hirviendo pero a temperatura media.
-                    </li>
-                    <li>Cuando vamos sacando las tortas fritas las espolvoreamos o pasamos por un plato con azucar.
-                        Verán que el azúcar queda pegada </li>
-                    <li>Están listas! Si quieren ver otra opción de tortas fritas dulces pueden ver el video en donde
-                        muestro una opción mucho más polémica pero que está increíble!</li>
-                </ol>
+            <p class="intro">
 
-                <div class="videoDiv ">
+                La torta frita (en gran parte de Argentina y todo Uruguay), cachanga (en el Perú), hojaldra (en
+                Panamá y Colombia), sopaipilla (en Chile y la región argentina de Cuyo),chipá cuerito, chipá chiryrý
+                y chipa amasada (en el Noreste argentino y Paraguay) y
+                frito (en el noroeste argentino y Bolivia) es un bocado típico de la gastronomía de América Latina.
+                Las tortas fritas usualmente se preparan de forma redondeada y achatada. También existen variantes
+                que recuerdan por su masa y gusto
+                a los buñuelos.
 
-                    <iframe class="video " src="https://www.youtube.com/embed/UzdbVJp8_0M "
-                        title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture
+            </p>
+            <div class="contentImagesTortaFritas ">
+                <img src="./images/tortaFrita.jpg " alt="Torta Frita " class="imageTortaFrita ">
+                <img src="./images/TortasFritasLimon.jpg " alt="Tortas Fritas de Limon " class="imageTortaFrita ">
+                <img src="./images/TortasFritasRellenasNortenas.jpg " alt="TortasFritasRellenasNorteñas "
+                    class="imageTortaFrita ">
+                <img src="./images/TortasFritasMate.jpg " alt="TortasFritasMate " class="imageTortaFrita ">
+            </div>
+
+
+            <h2>Ingredientes</h2>
+            <ul>
+                <li>1/2 kg de harina</li>
+                <li>4 cdas de grasa o manteca</li>
+                <li>1/2 taza de agua</li>
+                <li>2 cditas de sal</li>
+                <li>Aceite o grasa de vaca para freír, c/n</li>
+
+            </ul>
+
+            <h2>Preparación:</h2>
+
+            <ol>
+                <li>Colocar en un bol o recipiente los 250 g. de harina 0000 junto con los 250 g. de harina
+                    leudante. Si no tienen harina leudante no pasa nada, pueden utilizar directamente 500 g. de
+                    harina 0000. La función de la harina leudante es que
+                    las tortas fritas queden un poco más infladas, pero si solo utilizan harina común también van a
+                    quedar buenísimas.
+                </li>
+                <li>Mezcar bien las harinas, hacer un hueco en el medio y agregar una cucharadita de sal.</li>
+                <li>En el mismo hueco en el que agregamos la sal ahora vamos a incorporar 300 cm3 de agua caliente y
+                    luego la grasa de cerdo o vacuna. Es importante que el agua esté caliente ya que de otra forma
+                    deberíamos derretir la grasa antes de incorporarla,
+                    por lo tanto haciéndolo así nos ahorramos un paso.</li>
+                <li>Una vez que agregamos la grasa vamos a mezclar con los manos. Si utilizan anillos como yo
+                    recuerden quitarselos antes de empezar! Hay que pasar la masa a una mesada y amasar durante
+                    varios minutos. Si van a hacer tortas fritas dulces
+                    éste es el momento para agregar algún detalle que les guste, por ejemplo hay gente que utiliza
+                    ralladura de limón o también esencia de vainilla para darle otro toque de sabor. No hace falta
+                    amasar un montón, pero si asegurarnos
+                    de que esté bien unida.</li>
+                <li>Ahora vamos a envolver el bollo de masa en papel film y dejarlo reposar. Les recomiendo que como
+                    mínimo lo dejen reposar 15 minutos, aunque puede ser más. Se dice que lo ideal es preparar la
+                    masa y dejarla reposar toda la noche para
+                    cocinar las tortas fritas al día siguiente. En mi caso la dejé reposar media hora y cambia
+                    absolutamente su consistencia.
+                </li>
+                <li>Una vez que tenemos la masa lista vamos a formar una especie de cilindro y cortarlo en trozos
+                    pequeños para dividir la masa para cada torta frita. Les recomiendo que vean el video para que
+                    entiendan mejor a lo que me refiero, ya que
+                    explicarlo por escrito es un poco difícil.</li>
+                <li>Con cada trozo de masa vamos a hacer una bolita. Luego con el palo de amasar vamos a aplastarla
+                    hasta obtener un círculo de masa parecido al de una tapa de empanada pero más grueso, y por
+                    último a cada uno de éstos círculos de masa
+                    le haremos un agujero en el medio con un dedo. La función de éste hueco en la torta frita no es
+                    estético, sino para que el aceite pueda pasar por ahí mientras se cocinan.</li>
+                <li>Llegó la hora de cocinarlas. Pueden utilizar aceite común o hacerlas en grasa como hice yo. La
+                    verdad es que en mi opinión, al igual que las empanadas, las tortas fritas quedan mucho mejor si
+                    las freímos en grasa. El secreto aquí es
+                    que las tortas fritas no se cocinan a máxima temperatura, sino que la grasa o aceite debe estar
+                    hirviendo pero a temperatura media.
+                </li>
+                <li>Cuando vamos sacando las tortas fritas las espolvoreamos o pasamos por un plato con azucar.
+                    Verán que el azúcar queda pegada </li>
+                <li>Están listas! Si quieren ver otra opción de tortas fritas dulces pueden ver el video en donde
+                    muestro una opción mucho más polémica pero que está increíble!</li>
+            </ol>
+
+            <div class="videoDiv ">
+
+                <iframe class="video " src="https://www.youtube.com/embed/UzdbVJp8_0M " title="YouTube video player "
+                    frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture
                     " allowfullscreen "></iframe>
     </div>
 
     <!-- <iframe class=" map " src="
-                        https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26084473.625269603!2d-81.64453727499307!3d-37.054150462104076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses-419!2sar!4v1650851365520!5m2!1ses-419!2sar "  allowfullscreen=" " loading="
-                        lazy " referrerpolicy=" no-referrer-when-downgrade "></iframe> -->
+                    https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26084473.625269603!2d-81.64453727499307!3d-37.054150462104076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses-419!2sar!4v1650851365520!5m2!1ses-419!2sar "  allowfullscreen=" " loading="
+                    lazy " referrerpolicy=" no-referrer-when-downgrade "></iframe> -->
 
     <div>
-        <h3 class=" titleMap ">¿Donde podemos encontrar estas tortas fritas?</h3>
+        <h3 class=" titleMap " id="titleMap">¿Donde podemos encontrar estas tortas fritas?</h3>
 
         <!--
               <iframe class=" map " src="
-                        https://www.bing.com/maps/embed?h=300&w=250&cp=-37.30078792742579~-62.166892464355556&lvl=3&typ=d&sty=r&src=SHELL&FORM=MBEDV8 " scrolling="
-                        no " frameborder=" 0 ">
+                    https://www.bing.com/maps/embed?h=300&w=250&cp=-37.30078792742579~-62.166892464355556&lvl=3&typ=d&sty=r&src=SHELL&FORM=MBEDV8 " scrolling="
+                    no " frameborder=" 0 ">
                 </iframe>
             -->
             <iframe class=" map"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26084473.625269603!2d-81.64453727499307!3d-37.054150462104076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses-419!2sar!4v1654813617175!5m2!1ses-419!2sar"
-                        width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26084473.625269603!2d-81.64453727499307!3d-37.054150462104076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaf5f5fdc667%3A0x3d2f77992af00fa8!2sArgentina!5e0!3m2!1ses-419!2sar!4v1654813617175!5m2!1ses-419!2sar"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
+            </div>
+
+
+
+            <h3 class=" TextAudio " id="TextAudio">
+                A continuacion te dejamos un par de canciones para que te sirvan de inspiración para realizar esta
+                exquisita receta!
+            </h3>
+            <div class=" PlayAudio ">
+
+                <audio controls>
+                    <source src=" ./audio/Welcome to Gusteaus.mp3 " />
+                </audio>
+                <audio controls>
+                    <source src=" ./audio/audio2.mp3 " />
+                </audio>
+            </div>
+
+            <h3 class=" TextAudio " id="TextAudio2">
+                Como asi también este playlist que la rompe!
+            </h3>
+            <iframe class="spotifyFrame "
+                src=" https://open.spotify.com/embed/playlist/37i9dQZF1DWZypDDXfbyfI?utm_source=generator&theme=0 "
+                frameBorder=" 0 " allowfullscreen=" "
+                allow=" autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture ">
+            </iframe>
+
+            <a href=" https://api.whatsapp.com/send?phone=5492616207772 " target=" _blank " rel=" noopener noreferrer ">
+                <i class=" fab fa-whatsapp "></i> </a>
+
+
+            <div class="card cardQuote" id="cardQuote">
+
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p>La gastronomía es el arte de usar los alimentos para crear felicidad</p>
+                        <footer class="blockquote-footer">Theodore Zeldin,
+                            <cite title="Source Title">Cocinero</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+
+
+            <h3 class="TitleCards" id="TitleCards">Recomendaciones para que puedas seguir haciendo magia en la
+                cocina</h3>
+
+            <section class="CardsBootstrap" id="CardsBootstrap">
+
+                <div class="card cardb" id="cardb1">
+                    <img src="https://estaticos-cdn.prensaiberica.es/clip/f3f80d3b-d2fd-4196-9868-816fc4174a08_16-9-aspect-ratio_default_0.jpg"
+                        class="card-img-top" alt="AnnaRecetasFaciles" />
+                    <div class="card-body">
+                        <h5 class="card-title">ANNA RECETAS FACILES</h5>
+                        <h5 class="card-subtitle">Recetas que siempre salen bien</h5>
+                        <p class="card-text">
+                            Anna Terés. Española, Licenciada en Geografía e Historia apasionada
+                            por la cocina.
+                        </p>
+                        <a href="https://www.instagram.com/annarecetasfaciles/" target="blank"
+                            class="btn btn-primary">Conocé sus recetas</a>
+                    </div>
                 </div>
 
-
-
-                <h3 class=" TextAudio ">
-                    A continuacion te dejamos un par de canciones para que te sirvan de inspiración para realizar esta
-                    exquisita receta!
-                </h3>
-                <div class=" PlayAudio ">
-
-                    <audio controls>
-                        <source src=" ./audio/Welcome to Gusteaus.mp3 " />
-                    </audio>
-                    <audio controls>
-                        <source src=" ./audio/audio2.mp3 " />
-                    </audio>
-                </div>
-
-                <h3 class=" TextAudio ">
-                    Como asi también este playlist que la rompe!
-                </h3>
-                <iframe class="spotifyFrame "
-                    src=" https://open.spotify.com/embed/playlist/37i9dQZF1DWZypDDXfbyfI?utm_source=generator&theme=0 "
-                    frameBorder=" 0 " allowfullscreen=" "
-                    allow=" autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture ">
-                </iframe>
-
-                <a href=" https://api.whatsapp.com/send?phone=5492616207772 " target=" _blank "
-                    rel=" noopener noreferrer "> <i class=" fab fa-whatsapp "></i> </a>
-
-
-                <div class="card cardQuote">
+                <div class="card cardb" id="cardb2">
+                    <img src="https://vinomanos.com/wp-content/uploads/2021/04/Paulina-cocina.jpg" class="card-img-top"
+                        alt="PaulinaCocina" />
 
                     <div class="card-body">
-                        <blockquote class="blockquote mb-0">
-                            <p>La gastronomía es el arte de usar los alimentos para crear felicidad</p>
-                            <footer class="blockquote-footer">Theodore Zeldin,
-                                <cite title="Source Title">Cocinero</cite>
-                            </footer>
-                        </blockquote>
+                        <h5 class="card-title">PAULINA COCINA</h5>
+                        <h5 class="card-subtitle">Recetas de todo tipo</h5>
+                        <p class="card-text">
+                            Carolina Puga. Socióloga. Bloguera culinaria, ninja en la organizacion
+                            de las comidas.
+                        </p>
+                        <a href="https://www.instagram.com/paulinacocina/ " target="blank"
+                            class="btn btn-primary">Conocé sus recetas</a>
                     </div>
                 </div>
 
+                <div class="card cardb" id="cardb3">
+                        <img src=" https://storage.lacapitalmdp.com/2019/09/El-Mago-Cocina-1024x678.jpg"
+                    alt="ElMagoCocina" />
 
-                <h3 class="TitleCards">Recomendaciones para que puedas seguir haciendo magia en la
-                    cocina</h3>
-
-                <section class="CardsBootstrap">
-
-                    <div class="card cardb" >
-                        <img src="https://estaticos-cdn.prensaiberica.es/clip/f3f80d3b-d2fd-4196-9868-816fc4174a08_16-9-aspect-ratio_default_0.jpg"
-                            class="card-img-top" alt="AnnaRecetasFaciles" />
-                        <div class="card-body">
-                            <h5 class="card-title">ANNA RECETAS FACILES</h5>
-                            <h5 class="card-subtitle">Recetas que siempre salen bien</h5>
-                            <p class="card-text">
-                                Anna Terés. Española, Licenciada en Geografía e Historia apasionada
-                                por la cocina.
-                            </p>
-                            <a href="https://www.instagram.com/annarecetasfaciles/" target="blank"
-                                class="btn btn-primary">Conocé sus recetas</a>
-                        </div>
-                    </div>
-
-                    <div class="card cardb" >
-                        <img src="https://vinomanos.com/wp-content/uploads/2021/04/Paulina-cocina.jpg"
-                            class="card-img-top" alt="PaulinaCocina" />
-
-                        <div class="card-body">
-                            <h5 class="card-title">PAULINA COCINA</h5>
-                            <h5 class="card-subtitle">Recetas de todo tipo</h5>
-                            <p class="card-text">
-                                Carolina Puga. Socióloga. Bloguera culinaria, ninja en la organizacion
-                                de las comidas.
-                            </p>
-                            <a href="https://www.instagram.com/paulinacocina/ " target="blank"
-                                class="btn btn-primary">Conocé sus recetas</a>
-                        </div>
-                    </div>
-
-                    <div class="card cardb" ">
-                        <img src="https://storage.lacapitalmdp.com/2019/09/El-Mago-Cocina-1024x678.jpg"
-                            alt="ElMagoCocina" />
-
-                        <div class="card-body">
-                            <h5 class="card-title">EL MAGO COCINA</h5>
-                            <h5 class="card-subtitle">Cocina de Fuego</h5>
-                            <p class="card-text">
-                                Pablo Villar, ex futbolista de Alvarado y reconocido parrillero
-                                marplatense
-                            </p>
-                            <a href="https://www.instagram.com/elmagococina/" target="blank"
-                                class="btn btn-primary">Conocé
-                                sus recetas</a>
-                        </div>
-                    </div>
-
-                    <div class="card cardb" >
-                        <img src="https://buenavibra.es/wp-content/uploads/2017/06/asado-1.jpg" class="card-img-top"
-                            alt="LocosXElAsado" />
-
-                        <div class="card-body">
-                            <h5 class="card-title">LOCOS X EL ASADO</h5>
-                            <h5 class="card-subtitle">La comunidad del asado</h5>
-                            <p class="card-text">Secretos para las mejores recetas al Fuego.</p>
-                            <a href="https://www.instagram.com/locosxelasado/" target="blank"
-                                class="btn btn-primary">Conocé
-                                sus recetas</a>
-                        </div>
-                    </div>
-
-
-                </section>
-
-            </main>
-
-            <footer class="footerPage">
-                <div class=" SocialMediaButtons ">
-                    <a class=" social-button facebook " href=" https://www.facebook.com/ " target=" _blank "><i
-                            class=" fab fa-facebook-f "></i></a>
-                    <a class=" social-button twitter " href=" https://www.twitter.com/ " target=" _blank "><i
-                            class=" fab fa-twitter "></i></a>
-                    <a class=" social-button youtube " href=" https://www.youtube.com/ " target=" _blank "><i
-                            class=" fab fa-youtube "></i></a>
-                    <a class=" social-button instagram " href=" https://www.instagram.com/ " target=" _blank "><i
-                            class=" fab fa-instagram "></i></a>
+                <div class="card-body">
+                    <h5 class="card-title">EL MAGO COCINA</h5>
+                    <h5 class="card-subtitle">Cocina de Fuego</h5>
+                    <p class="card-text">
+                        Pablo Villar, ex futbolista de Alvarado y reconocido parrillero
+                        marplatense
+                    </p>
+                    <a href="https://www.instagram.com/elmagococina/" target="blank" class="btn btn-primary">Conocé
+                        sus recetas</a>
                 </div>
-            </footer>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-                crossorigin="anonymous"></script>
-
-        </body>
     </div>
+
+    <div class="card cardb" id="cardb4">
+        <img src="https://buenavibra.es/wp-content/uploads/2017/06/asado-1.jpg" class="card-img-top"
+            alt="LocosXElAsado" />
+
+        <div class="card-body">
+            <h5 class="card-title">LOCOS X EL ASADO</h5>
+            <h5 class="card-subtitle">La comunidad del asado</h5>
+            <p class="card-text">Secretos para las mejores recetas al Fuego.</p>
+            <a href="https://www.instagram.com/locosxelasado/" target="blank" class="btn btn-primary">Conocé
+                sus recetas</a>
+        </div>
+    </div>
+
+
+    </section>
+
+    </main>
+
+    <footer class="footerPage" id="footerPage">
+        <div class=" SocialMediaButtons ">
+            <a class=" social-button facebook " href=" https://www.facebook.com/ " target=" _blank "><i
+                    class=" fab fa-facebook-f "></i></a>
+            <a class=" social-button twitter " href=" https://www.twitter.com/ " target=" _blank "><i
+                    class=" fab fa-twitter "></i></a>
+            <a class=" social-button youtube " href=" https://www.youtube.com/ " target=" _blank "><i
+                    class=" fab fa-youtube "></i></a>
+            <a class=" social-button instagram " href=" https://www.instagram.com/ " target=" _blank "><i
+                    class=" fab fa-instagram "></i></a>
+        </div>
+        <button class="info" onclick="copyright()">© Copyright</button>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="js/execute.js"></script>
+
+</body>
+</div>
 
 </html>

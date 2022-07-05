@@ -110,3 +110,16 @@ posicionamiento en los buscadores (SEO).
  </ul> 
  
 *Actualizar el repositorio de Github y entregar la Github-page en la plataforma de Potrero Digital (Tambien pueden ingresar otros componentes que quieran y se animen a probar).*
+
+
+
+## CLASE 9 - TRABAJO PRÁCTICO 8 - JAVASCRIPT
+*A la receta del trabajo práctico anterior agregarle los siguientes ítems:*
+<ol> 
+<li> Un script dentro del código HTML que ejecute un alert antes de que cargue la pagina con una leyenda de Bienvenida.
+<li> Un Botón que al presionarlo convierta nuestra página en un sitio inclusivo apto para personas con discapacidad visual (fondos oscuros y letras claras)
+<li> Un botón en el footer que al darle click ejecute una función que muestre un alert con los datos del creador del sitio.
+<li>  Actualizar el repositorio de Github con los cambios realizados.
+<li>Entregar el link de la Github page en la Plataforma de Potrero Digital.
+</ol> 
+
